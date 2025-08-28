@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 2: Assignment - Enhancing HTML5 and Mastering Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>Week 2: Web Development Assignment</h1>
+        <p>The Overview of this assignment as highlighted on the Github-Classroom page is Enhancing HTML5 and Mastering Forms by practicing using listsm tablesm and media to enrich content and build dynamic HTML5 powered forms.</p>
+    </header>
+
+    <main>
+
+        <!-- Section: Use of Lists -->
+        <section>
+            <h2>PLP Courses</h2>
+            <p>Here are some courses that are undertaken today:</p>
+			<!-- Unordered -->
+            <ul>
+                <li>Python</li>
+                <li>Web Dev v2</li>
+                <li>Software Engineering</li>
+                <li>Databse Desing and Dev</li>
+                <li>Startup Building</li>
+            </ul>
+
+            <h3>Steps to Become a PLP Certified Web Dev</h3>
+            <!-- Ordered -->
+			<ol>
+                <li>Learn HTML & CSS basics</li>
+                <li>Practice with JavaScript</li>
+                <li>Build small projects</li>
+                <li>Understand version control with VSCode and Git</li>
+                <li>Work on real-world problems</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>My Scores Table</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <caption>Student Name: Mariano Emadau</caption>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Score</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Software Engineering</td>
+                        <td>80</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>76</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Web Dev v2</td>
+                        <td>92</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Databse Desing and Dev</td>
+                        <td>83</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Startup Building</td>
+                        <td>95</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Media -->
+        <section>
+            <h2>HTML5 with Media</h2>
+            <p>Application of Media namely image, audio, and video to show HTML5 media elements.</p>
+            
+            <figure>
+                <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" width="" height="200" alt="Placeholder Image">
+                <figcaption>Sample placeholder image</figcaption>
+            </figure>
+
+            <audio controls>
+                <source src="https://www.dropbox.com/scl/fi/zvnrldnvdhq3rkvooosji/Week2Assignment_Audio.mp3?rlkey=bznh0d88u4rmuodnztcq539vp&dl=0" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <br><br>
+
+            <video controls width="320">
+                <source src="https://www.pexels.com/download/video/3571264/" type="video/mp4" height="200">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Section: Form -->
+        <section>
+            <h2>Student Registration Form</h2>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required minlength="3" placeholder="Enter first name">
+                    <br><br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required minlength="3" placeholder="Enter Surname">
+                    <br><br>
+					
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required minlength="3" placeholder="Enter Last name">
+                    <br><br>
+					
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="100" required>
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+					<br><br>
+					
+                    <label for="citizen">Citizenship:</label>
+                    <select id="citizen" name="country" required>
+                        <option value="">--Select--</option>
+                        <option value="Kenya">Kenyan</option>
+                        <option value="UG">Ugandan</option>
+                        <option value="TZ">Tanzanian</option>
+						<option value="RW">Rwandan</option>
+						<option value="NG">Nigerian</option>
+						<option value="GH">Ghanaian</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Account Setup</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,12}" 
+                           placeholder="5-12 letters/numbers">
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <br><br>
+
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm" required minlength="6">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Choose your favorite language:</p>
+                    <input type="radio" id="lang-html" name="language" value="HTML" required>
+                    <label for="lang-html">HTML</label>
+
+                    <input type="radio" id="lang-css" name="language" value="CSS">
+                    <label for="lang-css">CSS</label>
+
+                    <input type="radio" id="lang-js" name="language" value="JavaScript">
+                    <label for="lang-js">JS</label>
+                    
+					<input type="radio" id="lang-py" name="language" value="Python">
+                    <label for="lang-js">PY</label>
+                    <br><br>
+
+                    <label for="skills">Select your skills:</label>
+					<br>
+                    <input type="checkbox" id="skill1" name="skills" value="frontend">
+                    <label for="skill1">Frontend</label>
+
+                    <input type="checkbox" id="skill2" name="skills" value="backend">
+                    <label for="skill2">Backend</label>
+
+                    <input type="checkbox" id="skill3" name="skills" value="database">
+                    <label for="skill3">Database</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Other Info</legend>
+
+                    <label for="bio">Short Bio:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea>
+                    <br><br>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PLP HTML5 Wk2 Assignment</p>
+    </footer>
+
+</body>
+</html>
